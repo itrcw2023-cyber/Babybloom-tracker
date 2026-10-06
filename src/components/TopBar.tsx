@@ -15,6 +15,7 @@ import {
 } from 'lucide-react';
 import { UserProfile } from '../types/pregnancy';
 import { useLiveClock } from '../utils/useLiveClock';
+import { MotherBabyLogo } from './MotherBabyLogo';
 
 export type TabType = 'dashboard' | 'notes' | 'medications' | 'suggestions';
 
@@ -65,9 +66,10 @@ export const TopBar: React.FC<TopBarProps> = ({
             className="flex items-center gap-2 cursor-pointer group select-none min-w-0"
             title="Click to edit profile, due date, timezone & OB contact"
           >
-            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-2xl bg-gradient-to-br from-rose-500 to-rose-600 flex items-center justify-center text-white shadow-xs group-hover:scale-105 transition-transform shrink-0">
-              <Heart className="w-4 h-4 sm:w-5 sm:h-5 fill-white text-white" />
-            </div>
+            <MotherBabyLogo
+              size={40}
+              className="group-hover:scale-105 transition-transform"
+            />
             <div className="min-w-0">
               <div className="flex items-center gap-1.5">
                 <span className="text-sm sm:text-base font-black text-stone-900 tracking-tight leading-tight truncate">

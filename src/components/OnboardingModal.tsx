@@ -15,6 +15,7 @@ import {
   ArrowRight
 } from 'lucide-react';
 import { UserProfile } from '../types/pregnancy';
+import { MotherBabyLogo } from './MotherBabyLogo';
 import {
   getTodayDateString,
   shiftDateString,
@@ -123,9 +124,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
 
           <div className="relative z-10 flex items-start justify-between">
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-2xl bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/30 shadow-inner">
-                <Heart className="w-6 h-6 fill-white text-white" />
-              </div>
+              <MotherBabyLogo size={48} className="border border-white/30 shadow-inner" />
               <div>
                 <span className="text-[11px] font-bold tracking-wider uppercase text-rose-100/90 block">
                   Welcome Setup

@@ -18,6 +18,7 @@ import {
   ChevronRight
 } from 'lucide-react';
 import { usePWAInstall } from '../utils/usePWAInstall';
+import { MotherBabyLogo } from './MotherBabyLogo';
 
 interface InstallAppModalProps {
   isOpen: boolean;
@@ -131,9 +132,7 @@ export const InstallAppModal: React.FC<InstallAppModalProps> = ({
             <div className="space-y-3.5">
               <div className="bg-gradient-to-br from-rose-50 via-white to-stone-50 border border-rose-200 p-4 rounded-2xl shadow-2xs space-y-3">
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-2xl bg-rose-500 text-white flex items-center justify-center shadow-sm shrink-0">
-                    <span className="text-lg font-extrabold tracking-tight">BB</span>
-                  </div>
+                  <MotherBabyLogo size={48} className="shrink-0" />
                   <div>
                     <h4 className="text-sm font-bold text-stone-900">BabyBloom Tracker</h4>
                     <span className="text-[11px] text-rose-600 font-medium block">

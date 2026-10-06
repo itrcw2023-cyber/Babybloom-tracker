@@ -21,6 +21,7 @@ import {
 } from 'lucide-react';
 import { useLiveClock } from '../utils/useLiveClock';
 import { calculateGestationalAge } from '../utils/dateTime';
+import { MotherBabyLogo } from './MotherBabyLogo';
 
 interface ProfileModalProps {
   isOpen: boolean;
@@ -98,9 +99,7 @@ export const ProfileModal: React.FC<ProfileModalProps> = ({
         {/* Header */}
         <div className="p-4 bg-white border-b border-stone-200 flex items-center justify-between shrink-0">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-full bg-rose-100 text-rose-700 flex items-center justify-center">
-              <Heart className="w-4 h-4 fill-rose-500 text-rose-500" />
-            </div>
+            <MotherBabyLogo size={34} />
             <div>
               <h3 className="text-sm font-bold text-stone-900">BabyBloom Tracker Settings</h3>
               <p className="text-[11px] text-stone-500 flex items-center gap-1">
