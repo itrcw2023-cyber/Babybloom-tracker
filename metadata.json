@@ -1,0 +1,10 @@
+{
+  "name": "BabyBloom Tracker",
+  "description": "Personal pregnancy progress monitor and milestone journal with weekly baby growth, symptom tracking with Filipino translations, doctor prescriptions photo vault, vitamin and medicine schedule with missed dose alerts. Developed by OjrE.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

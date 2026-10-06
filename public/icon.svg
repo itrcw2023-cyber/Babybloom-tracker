@@ -1,0 +1,35 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff1f2" />
+      <stop offset="50%" stop-color="#fecdd3" />
+      <stop offset="100%" stop-color="#f43f5e" />
+    </linearGradient>
+    <linearGradient id="heartGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#ffe4e6" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#881337" flood-opacity="0.25" />
+    </filter>
+  </defs>
+  
+  <!-- Rounded Base -->
+  <rect width="512" height="512" rx="110" fill="url(#bgGrad)" />
+  
+  <!-- Subtle inner border -->
+  <rect x="12" y="12" width="488" height="488" rx="98" fill="none" stroke="#ffffff" stroke-width="4" stroke-opacity="0.6" />
+
+  <!-- Central Heart & Mother Emblem -->
+  <g filter="url(#shadow)">
+    <!-- Main Glow Shield -->
+    <circle cx="256" cy="256" r="150" fill="#ffffff" fill-opacity="0.95" />
+    
+    <!-- Pregnant Mother & Baby Heart Art -->
+    <path d="M256 160 C 230 120, 175 125, 155 165 C 130 215, 170 270, 256 340 C 342 270, 382 215, 357 165 C 337 125, 282 120, 256 160 Z" fill="url(#bgGrad)" />
+    
+    <!-- Little Baby Footprint / Sparkle -->
+    <circle cx="256" cy="235" r="22" fill="#ffffff" />
+    <path d="M256 215 L 261 228 L 274 233 L 261 238 L 256 251 L 251 238 L 238 233 L 251 228 Z" fill="#f43f5e" />
+  </g>
+</svg>

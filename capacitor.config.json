@@ -1,0 +1,8 @@
+{
+  "appId": "com.babybloom.tracker",
+  "appName": "BabyBloom Tracker",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  }
+}
